@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bufete Legal Horizonte • Tu tranquilidad legal, nuestra prioridad</title>
+    <style>
+:root{
+  --bg:#ffffff;
+  --text:#0b1a2e;
+  --muted:#5a6b86;
+  --brand:#0b1a2e; /* azul marino */
+  --accent:#c7a644; /* dorado */
+  --card:#f6f8fb;
+  --border:#e5eaf1;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+img{max-width:100%;height:auto}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{width:min(1100px,92%);margin-inline:auto}
+.small{font-size:.9rem;color:var(--muted)}
+.unstyled{list-style:none;padding-left:0;margin:0}
+/* Header */
+.site-header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--border)}
+.header-wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--text)}
+.site-nav{display:flex;gap:22px;align-items:center}
+.nav-toggle{display:none;background:none;border:0;padding:8px;cursor:pointer}
+.nav-toggle span{display:block;width:22px;height:2px;background:var(--text);margin:4px 0}
+/* Hero */
+.hero{background:linear-gradient(135deg,var(--brand),#132b4b);color:#fff;padding:80px 0}
+.hero .actions{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+/* Buttons */
+.btn{display:inline-block;padding:12px 18px;border-radius:12px;border:1px solid transparent;font-weight:600}
+.btn-primary{background:var(--accent);color:#1b1b1b;border-color:var(--accent)}
+.btn-outline{background:transparent;color:#fff;border-color:#fff}
+/* Cards & grids */
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px}
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cards-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.cards-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.section-head{margin:36px 0 18px}
+.page{padding:28px 0 40px}
+.page-head{margin:18px 0 22px}
+.person{text-align:center}
+.person img{border-radius:50%;background:#fff;border:1px solid var(--border)}
+.note{background:#fff;border:1px dashed var(--border);border-radius:12px;padding:14px;margin-top:10px}
+/* CTA */
+.cta{background:linear-gradient(90deg,#0b1a2e,#132b4b);color:#fff;padding:36px 0;margin-top:28px}
+.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+/* Footer */
+.site-footer{border-top:1px solid var(--border);margin-top:32px;padding:22px 0;background:#fff}
+.site-footer .grid-3{display:grid;grid-template-columns:2fr 1fr 1fr;gap:16px}
+.site-footer .print{margin-top:12px;color:var(--muted)}
+/* Responsive */
+@media (max-width:900px){
+  .trust-grid,.cards-4{grid-template-columns:repeat(2,1fr)}
+  .grid-2{grid-template-columns:1fr}
+  .cta-inner{flex-direction:column;align-items:flex-start}
+}
+@media (max-width:680px){
+  .cards-3,.trust-grid,.cards-4{grid-template-columns:1fr}
+  .site-nav{display:none;position:absolute;right:4%;top:60px;background:#fff;border:1px solid var(--border);border-radius:12px;padding:10px;flex-direction:column;gap:10px;min-width:220px}
+  .nav-toggle{display:block}
+}
+    </style>
+  </head>
+  <body>
+<header class="site-header">
+  <div class="container header-wrap">
+    <a class="brand" href="#" aria-label="Bufete Legal Horizonte - Inicio">
+      <span>⚖️</span>
+      <span>Bufete Legal Horizonte</span>
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Navegación principal">
+      <a href="#">Inicio</a>
+      <a href="#">Servicios</a>
+      <a href="#">Nuestro equipo</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1>Tu tranquilidad legal, nuestra prioridad</h1>
+      <p>Asesoría estratégica, trato humano y resultados medibles. Acompañamos a personas y empresas en cada paso.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#">Agenda una consulta</a>
+        <a class="btn btn-outline" href="#">Ver servicios</a>
+      </div>
+    </div>
+  </section>
+  <section class="trust container">
+    <div class="trust-grid">
+      <article class="card">
+        <h3>Experiencia</h3>
+        <p>Más de 10 años resolviendo casos civiles, familiares, laborales y penales.</p>
+      </article>
+      <article class="card">
+        <h3>Transparencia</h3>
+        <p>Honorarios claros y comunicación constante en cada fase de tu asunto.</p>
+      </article>
+      <article class="card">
+        <h3>Confidencialidad</h3>
+        <p>Protegemos tu información con criterios éticos y legales estrictos.</p>
+      </article>
+    </div>
+  </section>
+  <section class="services container">
+    <header class="section-head">
+      <h2>Áreas de práctica</h2>
+      <p>Soluciones legales para personas y empresas.</p>
+    </header>
+    <div class="cards-4">
+      <article class="card service">
+        <h3>Civil</h3>
+        <p>Contratos, arrendamientos, incumplimientos, daños y perjuicios.</p>
+      </article>
+      <article class="card service">
+        <h3>Familiar</h3>
+        <p>Divorcios, pensiones, guarda y custodia, adopciones.</p>
+      </article>
+      <article class="card service">
+        <h3>Laboral</h3>
+        <p>Despidos, conciliaciones, cumplimiento patronal y defensa del trabajador.</p>
+      </article>
+      <article class="card service">
+        <h3>Penal</h3>
+        <p>Asesoría y defensa en carpetas de investigación y procesos.</p>
+      </article>
+    </div>
+  </section>
+  <section class="cta">
+    <div class="container cta-inner">
+      <h2>¿Necesitas orientación inmediata?</h2>
+      <p>Cuéntanos tu caso. Te daremos un panorama claro de opciones y tiempos.</p>
+      <a class="btn btn-primary" href="#">Contactar</a>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container grid-3">
+    <section>
+      <h3>Bufete Legal Horizonte</h3>
+      <p>Av. Principal 123, Ciudad Juárez, México</p>
+      <p>Tel: <a href="tel:+526560000000">+52 656 000 0000</a><br/>Correo: <a href="mailto:contacto@bufetehorizonte.com">contacto@bufetehorizonte.com</a></p>
+    </section>
+    <section>
+      <h4>Áreas de práctica</h4>
+      <ul class="unstyled">
+        <li>Derecho civil</li>
+        <li>Derecho familiar</li>
+        <li>Derecho laboral</li>
+        <li>Penal</li>
+        <li>Corporativo</li>
+      </ul>
+    </section>
+    <section>
+      <h4>Legal</h4>
+      <ul class="unstyled">
+        <li><a href="#">Aviso de privacidad</a></li>
+      </ul>
+    </section>
+  </div>
+  <div class="container small print">
+    © 2025 Bufete Legal Horizonte. Todos los derechos reservados.
+  </div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.getElementById('site-nav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      const open = nav.style.display === 'block';
+      nav.style.display = open ? 'none' : 'block';
+      toggle.setAttribute('aria-expanded', String(!open));
+    });
+  }
+});
+</script>
+  </body>
+</html>
